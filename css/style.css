@@ -38,7 +38,7 @@ a:link{
 
 .container{
     background-color: var(--fundo);
-    width: 100%;
+    width: 100vw;
     height: 200vh;
     display: flex;
     flex-wrap: wrap;
