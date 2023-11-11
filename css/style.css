@@ -28,7 +28,6 @@
 
 html{
     scroll-behavior: smooth;
-    cursor:url('../images/cursor.png');
 }
 a:visited{
     color: var(--txt);
@@ -37,19 +36,162 @@ a:link{
     color: var(--txt);
 }
 
-
-
-
+.container{
+    background-color: var(--fundo);
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 nav{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--fundo2);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fundo1);
+}
+.autor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+}
+.aluisio{
+    height: 80%;
+    width: 22%;
+    margin: 3rem;
+    padding: 3rem;
+    padding-bottom: 15rem;
+    border-radius: 20px 500px 500px 500px;/*topo direita baixo esquerda */
+    background-color: var(--fundo2);
+    border: 0.2rem solid var(--destaq); 
+}
+.aluisio img{
+    width: 100%;
+    border-radius:20px 500px 500px 500px;
+}
+.descricao{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#p1{
+    font-weight: bolder;
+    font-size: 0.96rem;
+    text-align: center;
+}
+#p2{
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+}
+#p3{
+    text-align: center;
+}
+
+.content{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: start;
+}
+.switches{
+    /* margin: 3rem 3rem 0  3rem; */
     display: flex;
     width: 100%;
+    height: 10%;
+}
+#sobre,#obras,#voltar{
+    width: 7rem;
+    border: 0.2rem solid var(--destaq); 
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#sobre{
+    background-color: var(--fundo2);
+    border-radius: 10px 0 0 0;
+    
+}
+#obras{
+    background-color: var(--fundo3);
+    border-radius: 0 10px 0 0;
+}
+#voltar{
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--destaq);
+}
+.back{
+    width: calc(90% - 14rem);
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.sobretxt{
+    width: 90%;
+    height: 90%;
+    /* margin: 0 3rem 3rem 3rem; */
+    background-color: var(--fundo2);
+    border: 0.2rem solid var(--destaq); 
+    border-radius: 0 0 200px 00px;
+}
+.sobretxt p{
+    margin: 3rem;
+}
+.obrastxt{
+    width: 90%;
+    height: 90%;
+    /* margin: 0 3rem 3rem 3rem; */
+    background-color: var(--fundo2);
+    border: 0.2rem solid var(--destaq); 
+    border-radius: 0 0 200px 00px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.obrastxt p{
+    margin: 3rem;
+}
+
+
+
+p{
+    color: var(--txt);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* nav{
+    display: flex;
+    width: 50%;
     height: 5rem;
 
     justify-content: space-between;
     position: fixed;
     background-color: var(--fundo);
-    /* background-color: blue; */
-    z-index: 100;
 }
 nav ul{
     margin-right: 4rem;
@@ -78,6 +220,7 @@ nav li{
     margin: 0.6rem 0rem;
     margin-left: 5rem;
 }
+
 
 
 #menu{
@@ -113,16 +256,20 @@ li:hover{
     color: var(--txt); 
     display: flex; 
     flex-wrap: wrap;
-}
-.Livro,.Resumo,.Conclusao,.Autor{
-    min-height: calc(100vh);
     width: 100%;
-    
-    display: flex;
-    flex-wrap: wrap;
+    height: 200vh;
+}
+.content2{
+    width: 100%;
+    background-color: var(--destaq);
+    height: 100vh;
+}
 
+.Autor{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-content: space-between;
 }
 
 .content2 h1{
@@ -130,32 +277,27 @@ li:hover{
     color: var(--txt);
     margin-top: 5rem;
     margin-bottom: 2.5rem;
-    opacity: 0;
     cursor: default;
 }
 .content2 p{
     margin: 0rem 2rem;
     color: var(--txt);
-    text-transform: capitalize;
     text-align: justify;
-    opacity: 0;
     cursor: default;
 }
 #voltar{
     padding: 0.7rem;
     background-color: rgb(215, 173, 230);
     border-radius: 40%;
-}
-
-.paragrafos{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-end;
-}
+} */
 
 
-.slide-left{
+
+
+
+
+
+/* .slide-left{
     animation: slideleft 0.7s forwards;
 } 
 p.slide-left{
@@ -164,9 +306,6 @@ p.slide-left{
 h1.slide-left{
     animation-delay: 1.3s;
 }
-
-
-
 nav li{
     animation: slideleft 1s both;
 }
@@ -214,40 +353,4 @@ li:nth-child(5){
         transform: translate(0px);
         opacity: 1;
     }
-}
-
-#imgC{
-    display: none;
-}
-
-
-@media screen and (max-width: 900px){
-    .logo{
-        margin-left: 0;
-        height: 4rem;
-    }
-    nav{
-        display: flex;
-        justify-content: space-around;
-    }
-    .mob{
-    display: flex;
-    align-items: center;
-    }
-    nav ul{
-        display: none;
-    }
-    #imgC:hover,#imgM:hover{
-       transform: scale(1.3);
-       
-    }
-    #autor{
-        margin-bottom: 5rem;
-    }
-    p.slide-left{
-        animation-delay: 1.3s;
-    }
-    h1.slide-left{
-        animation-delay: 0.8s;
-    }
-}
+} */

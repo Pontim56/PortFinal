@@ -1,21 +1,5 @@
 
 
-const myObserver = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show')
-        }else{
-            entry.target.classList.remove('show')
-        }
-    })
-})
-
-const elements = document.querySelectorAll('.hidden')
-
-elements.forEach((element)=>myObserver.observe(element))
-
-
-
 
 function mostrarMenu(event){
     var menu = document.getElementById("menu");
@@ -53,8 +37,6 @@ function fecharMenu() {
     content2.style.display="block";
 }
 
-
-
 var linksDoMenu = document.querySelectorAll('.menu a');
 
 linksDoMenu.forEach(function (link) {
@@ -62,3 +44,41 @@ linksDoMenu.forEach(function (link) {
         fecharMenu();
     });
 });
+
+
+
+
+
+function sandra(){
+    var rafa=document.getElementById("liberato");
+    var estilo = window.getComputedStyle(liberato);
+    var sandraCTT = document.getElementById("sandraContent");
+    if (estilo.display==="flex") {
+      rafa.style.display="none";
+      sandraCTT.style.display="block";
+      document.getElementById('sandraContent').scrollIntoView({});
+  
+  }else{
+    rafa.style.display="flex";
+    sandraCTT.style.display="none"
+  }
+  }
+
+
+var sobre =document.getElementById("sobre");
+var obras = document.getElementById("obras");
+var sobretxt = document.getElementById("sobretxt");
+var obrastxt = document.getElementById("obrastxt");
+
+function obrasF(){
+    sobre.style.backgroundColor="var(--fundo3)";
+    obras.style.backgroundColor="var(--fundo2)";
+    sobretxt.style.display="none";
+    obrastxt.style.display="flex";
+}
+function sobreF(){
+    obras.style.backgroundColor="var(--fundo3)";
+    sobre.style.backgroundColor="var(--fundo2)";
+    obrastxt.style.display="none";
+    sobretxt.style.display="flex";
+}
