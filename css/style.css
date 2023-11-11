@@ -56,7 +56,8 @@ main{
 }
 .autor{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 665px;
     display: flex;
     flex-direction: row; 
 }
@@ -81,11 +82,7 @@ main{
     flex-wrap: wrap;
     align-content: space-between;
 }
-#p1{
-    font-weight: bolder;
-    font-size: 0.96rem;
-    text-align: center;
-}
+
 #p2{
     margin: 10px 0;
     font-style: italic;
@@ -107,7 +104,6 @@ main{
     align-content: start;
 }
 .switches{
-    /* margin: 3rem 3rem 0  3rem; */
     display: flex;
     width: 100%;
     height: 10%;
@@ -148,9 +144,13 @@ main{
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
     border-radius: 0 0 200px 00px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
 .sobretxt p{
-    margin: 3rem;
+    margin: 0 3rem;
+    text-align: justify;
 }
 .obrastxt{
     width: 90%;
@@ -161,13 +161,37 @@ main{
     border-radius: 0 0 200px 00px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.obrastxt p{
-    margin: 3rem;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
+.livro1,.livro3{
+    margin-bottom: 6.5rem;
+    width: calc(100% / 4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.livro2 a{
+    display: flex;
+    justify-content: center;
+}
+.livro2{
+    margin-bottom: 6.5rem;
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pensao{
+    width: 80%;
+}
+.cortico-capa{
+    width: 80%;
+}
+.mulato{
+    width: 80%;
+}
 
 
 p{
