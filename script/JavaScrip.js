@@ -21,6 +21,7 @@ function rafa(){
   if (estilo.display==="flex") {
     sandra.style.display="none";
     liberatoCTT.style.display="block";
+    document.getElementById('liberatoContent').scrollIntoView({});
 
 }else{
   sandra.style.display="flex";
@@ -34,6 +35,7 @@ function sandra(){
   if (estilo.display==="flex") {
     rafa.style.display="none";
     sandraCTT.style.display="block";
+    document.getElementById('sandraContent').scrollIntoView({});
 
 }else{
   rafa.style.display="flex";
