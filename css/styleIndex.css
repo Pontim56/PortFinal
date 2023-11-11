@@ -203,6 +203,7 @@ header h1:hover{
 p,h1{
     text-align:center;
     color: var(--txt);
+    cursor: default;
 }
 .utfField p{
     font-size: 1.1rem;
