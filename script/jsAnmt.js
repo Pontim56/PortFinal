@@ -82,3 +82,19 @@ function sobreF(){
     obrastxt.style.display="none";
     sobretxt.style.display="flex";
 }
+
+function checkBoxChange() {
+    var checkBox = document.getElementById("meuCheckBox");
+    
+    if (checkBox.checked) {
+        document.documentElement.style.setProperty('--fundo','rgb(255, 214, 157)');
+        document.documentElement.style.setProperty('--fundo2','rgb(255, 193, 108)');
+        document.documentElement.style.setProperty('--fundo3','rgb(255, 148, 48)');
+        document.documentElement.style.setProperty('--destaq','rgb(248, 56, 57)');
+    } else {
+        document.documentElement.style.setProperty('--fundo','rgb(207, 229, 236)');
+        document.documentElement.style.setProperty('--fundo2','rgb(173,216,230)');
+        document.documentElement.style.setProperty('--fundo3','rgb(134, 197, 218)');
+        document.documentElement.style.setProperty('--destaq','rgb(215, 173, 230)');
+    }
+}
