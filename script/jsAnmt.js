@@ -1,54 +1,3 @@
-
-
-
-function mostrarMenu(event){
-    var menu = document.getElementById("menu");
-    var estilo = window.getComputedStyle(menu);
-    var nav = document.getElementById("nav");
-    var content2 = document.getElementById("content2");
-    var imgM = document.getElementById("imgM");
-    var imgC = document.getElementById("imgC");
-    if (estilo.display==="none") {
-        menu.style.display="block";
-        // nav.style.backgroundColor="rgb(134, 197, 218)";
-        nav.style.backgroundColor="rgb(173,216,230)";
-        content2.style.display="none";
-        imgC.style.display="block"
-        imgM.style.display="none"
-    }else{
-        imgM.style.display="block"
-        imgC.style.display="none"
-        menu.style.display="none";
-        nav.style.backgroundColor="rgb(207, 229, 236)";
-        content2.style.display="block";
-    }
-}
-
-function fecharMenu() {
-    var imgM = document.getElementById("imgM");
-    var imgC = document.getElementById("imgC");
-    var nav = document.getElementById("nav");
-    var content2 = document.getElementById("content2");
-    var menu = document.getElementById("menu");
-    imgM.style.display="block"
-    imgC.style.display="none"
-    menu.style.display = "none";
-    nav.style.backgroundColor="rgb(207, 229, 236)";
-    content2.style.display="block";
-}
-
-var linksDoMenu = document.querySelectorAll('.menu a');
-
-linksDoMenu.forEach(function (link) {
-    link.addEventListener('click', function () {
-        fecharMenu();
-    });
-});
-
-
-
-
-
 function sandra(){
     var rafa=document.getElementById("liberato");
     var estilo = window.getComputedStyle(liberato);
@@ -97,4 +46,22 @@ function checkBoxChange() {
         document.documentElement.style.setProperty('--fundo3','rgb(134, 197, 218)');
         document.documentElement.style.setProperty('--destaq','rgb(215, 173, 230)');
     }
+}
+
+
+
+
+var links = document.getElementById("link-personagens");
+var checkBox = document.getElementById("checkbox");
+
+function menu(){
+    if (checkBox.checked) {
+        links.style.display="flex"
+    } else {
+        links.style.display="none"
+    }
+}
+function closeMenu() {
+    links.style.display = "none";
+    checkBox.checked = false;
 }

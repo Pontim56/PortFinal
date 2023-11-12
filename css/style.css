@@ -55,22 +55,32 @@ a:link{
 nav{
     width:100%;
     height: 5rem;
-    background-color: var(--fundo2);
-    border-bottom: 0.2rem solid var(--destaq); 
+    /* background-color: var(--fundo2); */
+    /* border-bottom: 0.2rem solid var(--destaq);  */
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 0rem 0.5rem 3rem;/*topo direita baixo esquerda */
     width: 9rem;
     height: calc(100% - 1rem);
 }
 .link-personagens{
-    display: flex;
+    background-color: var(--fundo2);
+    margin: 1rem 19rem;
+    height: 3rem;
+
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+
     list-style: none;
+    border: 0.2rem solid var(--destaq);
+
 }
 .link-personagens li{
     margin: 0 1rem;
@@ -354,7 +364,7 @@ main{
     justify-content: center;
 }
 .divis{
-    width: 92%;
+    width: 93%;
     height: 0.2rem;
     background-color: var(--destaq);
 }
@@ -417,6 +427,67 @@ main{
     border-radius: 100px 100px 30px 100px;
   }
 
+
+
+
+  #checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: var(--destaq);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
 
 
 

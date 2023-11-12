@@ -13,17 +13,29 @@
     <div class="container">
         <nav id="nav">
             <img class="logo" src="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png" alt="">
-            <ul class="link-personagens">
-                <li><a href="#livro">Resumo</a></li>
-                <li><a href="#personagem1">Personagem 1</a></li>
-                <li><a href="#personagem2">Personagem 2</a></li>
-                <li><a href="#personagem3">Personagem 3</a></li>
-            </ul>
-            <div class="checkbox-wrapper-41">
-                <input onchange="checkBoxChange()" type="checkbox" id="meuCheckBox" class="checkbox">
-            </div>
+            
+            <input type="checkbox" id="checkbox" onchange="menu()">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+                
+                <div class="checkbox-wrapper-41"> <!--Mudar o tema-->
+                    <input onchange="checkBoxChange()" type="checkbox" id="meuCheckBox" class="checkbox">
+                </div>
+            </nav>
 
-        </nav>
+            <div class="divisao"><div class="divis"></div></div>
+
+            <ul class="link-personagens" id="link-personagens">
+                
+                <li><a href="#livro" onclick="closeMenu()">Resumo</a></li>
+                <li><a href="#personagem1" onclick="closeMenu()">Resumo</a></li>
+                <li><a href="#personagem2" onclick="closeMenu()">Resumo</a></li>
+                <li><a href="#personagem3" onclick="closeMenu()">Resumo</a></li>
+            </ul>
+            
         <main>
             <div class="autor">
                 <div class="aluisio">
