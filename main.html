@@ -11,15 +11,14 @@
 </head>
 <body>
     <div class="container">
-        <nav>
+        <nav id="nav">
             <img class="logo" src="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png" alt="">
-
             <ul class="link-personagens">
-                <li><a href="#">Personagem 1</a></li>
-                <li><a href="#">Personagem 2</a></li>
-                <li><a href="#">Personagem 3</a></li>
+                <li><a href="#livro">Resumo</a></li>
+                <li><a href="#personagem1">Personagem 1</a></li>
+                <li><a href="#personagem2">Personagem 2</a></li>
+                <li><a href="#personagem3">Personagem 3</a></li>
             </ul>
-
             <div class="checkbox-wrapper-41">
                 <input onchange="checkBoxChange()" type="checkbox" id="meuCheckBox" class="checkbox">
             </div>
@@ -62,11 +61,10 @@
             </div>
 
 
-            <div class="livro">
+            <div id="livro" class="livro">
                 <div class="livro-content">
                     <div class="switches-livro">
-                        <div class="back-livro"><a href="index.html"><h1 id="voltar">voltar</h1></a></div>
-                        <h1 id="resumo">Resumo</h1>
+                        <a href="#nav"><h1 id="resumo">Resumo</h1></a>
                     </div>
                     <div class="livro-resumo-txt">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iure autem minus tenetur! Odio quos laudantium nemo dolorum veniam, omnis quas facere voluptas reprehenderit dolor aperiam tempora officia. Accusamus, ullam.</p>
@@ -82,25 +80,40 @@
                 </div>
             </div>
 
+            <div class="divisao"><div class="divis"></div></div>
 
-            <div class="personagem1 pers">
+            <div id="personagem1" class="pers">
                 <div class="pers-content">
-                    <div class="switch-personagem1">
-                        <div class="back-pers"><a href="index.html"><h1 id="voltar">voltar</h1></a></div>
-                        <h1 id="h1-personagem1">Resumo</h1>
+                    <div class="switch-personagem-centro">
+                        <a href="#nav"><h1 id="h1-personagem1" class="h1-personagem">Pers 1</h1></a>
                     </div>
-                    <div class="texto-personagem1 txt">
+                    <div class="txt1">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
                     </div>
                 </div>
-                
             </div>
-            <div class="personagem2 pers">
-
+            <div id="personagem2" class="pers">
+                <div class="pers-content">
+                    <div class="switch-personagem-centro">
+                        <a href="#nav"><h1 id="h1-personagem2" class="h1-personagem">Pers 2</h1></a>
+                    </div>
+                    <div class="txt2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
+                    </div>
+                </div>
             </div>
-            <div class="personagem3 pers">
-
+            <div id="personagem3" class="pers">
+                <div class="pers-content">
+                    <div class="switch-personagem-centro">
+                        <a href="#nav"><h1 id="h1-personagem3" class="h1-personagem">Pers 3</h1></a>
+                    </div>
+                    <div class="txt3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
+                    </div>
+                </div>
             </div>
 
 

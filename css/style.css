@@ -47,7 +47,7 @@ a:link{
 .container{
     background-color: var(--fundo);
     width: calc(100vw - 1.1%);
-    height: 700vh;
+    height: 513vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -65,7 +65,7 @@ nav{
 }
 .logo{
     margin: 0.5rem 3rem;
-    width: 8rem;
+    width: 9rem;
     height: calc(100% - 1rem);
 }
 .link-personagens{
@@ -87,7 +87,6 @@ main{
 .autor{
     width: 100%;
     height: 100vh;
-    height: 665px;
     display: flex;
     flex-direction: row; 
 }
@@ -130,10 +129,8 @@ main{
     height: 80%;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: start;
 }
-.switches,.switch-personagem1{
+.switches{
     display: flex;
     width: 100%;
     height: 10%;
@@ -151,6 +148,16 @@ main{
     height: 100%;
     border-radius: 10px 10px 0 0;
     background-color: var(--destaq);
+}
+#sobre,#obras,#voltar,#resumo,.pers a h1{
+    height: 100%;
+    width: 7rem;
+    border: 0.2rem solid var(--destaq); 
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .back{
     width: calc(90% - 14rem);
@@ -214,8 +221,9 @@ main{
     width: 80%;
 }
 .livro{
+    padding-top: 2rem;
     width: 100%;
-    height: 665px;
+    height: 100vh;
     display: flex;
     flex-direction: row; 
 }
@@ -237,13 +245,14 @@ main{
 
 .livro-content{
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-right: 3rem;
     width: 70%;
     height: 80%;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: start;
+    
+    
 }
 .livro-resumo-txt{
     width: 90%;
@@ -261,36 +270,23 @@ main{
 }
 .switches-livro{
     display: flex;
+    justify-content: flex-end;
     width: 100%;
     height: 10%;
-}
-.back-livro{
-    width: calc(90% - 7rem);
-    display: flex;
-    justify-content: flex-start;
-    height: 100%;
 }
 #resumo{
     border-radius: 10px 10px 0 0;
     background-color: var(--fundo2);
-    cursor: default;
 }
 
 
 
-
-
-
-
-
-
-
-
-
 .pers{
+    padding-top: 2rem;
     width: 100%;
-    height: 665px;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     flex-direction: row; 
 }
 .pers-content{
@@ -302,12 +298,32 @@ main{
     justify-content: center;
     align-content:center;
 }
-.txt{
+.txt1{
     width: 100%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
-    border-radius: 0 0 0 200px;
+    border-radius: 0 0 200px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.txt2{
+    width: 100%;
+    height: 90%;
+    background-color: var(--fundo2);
+    border: 0.2rem solid var(--destaq); 
+    border-radius: 200px 200px 200px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.txt3{
+    width: 100%;
+    height: 90%;
+    background-color: var(--fundo2);
+    border: 0.2rem solid var(--destaq); 
+    border-radius:200px 200px 0 0;
     display: flex;
     flex-wrap: wrap;
     align-content: space-evenly;
@@ -316,38 +332,35 @@ main{
     margin: 0 3rem;
     text-align: justify;
 }
-.switch-personagem1{
+.switch-personagem-centro{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 10%;
 }
-.back-pers{
-    /* width: calc(100% - 7rem);
-    display: flex;
-    justify-content: flex-start; */
-    height: 100%;
-}
-#h1-personagem1{
+.h1-personagem{
     border-radius: 10px 10px 0 0;
     background-color: var(--fundo2);
-    cursor: default;
+    cursor:pointer;
 }
 
+.txt1 p,.txt2 p,.txt3 p{
+    margin: 0 3rem;
+    text-align: justify;
+}
 
-
-
-
-
-#sobre,#obras,#voltar,#resumo,#h1-personagem1{
-    width: 7rem;
-    border: 0.2rem solid var(--destaq); 
-    font-size: 1.5rem;
+.divisao{
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
+.divis{
+    width: 92%;
+    height: 0.2rem;
+    background-color: var(--destaq);
+}
+
+
+
 
 
 
