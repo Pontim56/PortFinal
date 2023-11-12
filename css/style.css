@@ -43,7 +43,9 @@ a:visited{
 a:link{
     color: var(--txt);
 }
-
+main{
+    animation: show 1.5s ease-in;
+}
 .container{
     background-color: var(--fundo);
     width: calc(100vw - 1.1%);
@@ -55,8 +57,6 @@ a:link{
 nav{
     width:100%;
     height: 5rem;
-    /* background-color: var(--fundo2); */
-    /* border-bottom: 0.2rem solid var(--destaq);  */
 
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +83,7 @@ nav{
     border: 0.2rem solid var(--destaq);
 
 }
+
 .link-personagens li{
     margin: 0 1rem;
 }
@@ -204,6 +205,9 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+}
+.obrastxt p{
+    cursor: pointer;
 }
 
 .livro1,.livro3{
