@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
+    --clr: #262433;
     --txt:rgb(40, 40, 40);
 
     --destaq:rgb(215, 173, 230) ;
@@ -182,22 +183,34 @@ main{
 .sobretxt{
     width: 90%;
     height: 90%;
-    /* margin: 0 3rem 3rem 3rem; */
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
     border-radius: 0 0 200px 00px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-evenly;
+    align-content: flex-start;
+    overflow:auto;
+    direction: rtl;
 }
 .sobretxt p{
+    direction: ltr;
+}
+.sobretxt p:nth-child(1){/*topo direita baixo esquerda */
+    margin: 3rem 4rem 1rem 2rem;
+    text-align: justify;
+}
+.sobretxt p:nth-child(2){/*topo direita baixo esquerda */
+    margin: 1rem 4rem 3rem 2rem;
+    text-align: justify;
+}
+.sobretxt p{
+    font-size: 1rem;
     margin: 0 3rem;
     text-align: justify;
 }
 .obrastxt{
     width: 90%;
     height: 90%;
-    /* margin: 0 3rem 3rem 3rem; */
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
     border-radius: 0 0 200px 00px;
@@ -281,16 +294,15 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    overflow: auto;
 }
 .livro-resumo-txt p:nth-child(1){/*topo direita baixo esquerda */
-    margin: 3rem 2rem 0.5rem 4rem;
+    margin: 3rem 2rem 1rem 4rem;
     text-align: justify;
-    font-size: 1rem;
 }
 .livro-resumo-txt p:nth-child(2){
-    margin: 0.5rem 2rem 3rem 4rem;
+    margin: 1rem 2rem 3rem 4rem;
     text-align: justify;
-    font-size: 1rem;
 }
 .switches-livro{
     display: flex;
@@ -609,11 +621,6 @@ main{
         opacity: 1;
     }
 }
-
-
-
-
-
 
 
 

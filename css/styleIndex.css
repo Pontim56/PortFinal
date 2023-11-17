@@ -165,11 +165,13 @@ header h1:hover{
     align-items: center;
 
     cursor:pointer;
+
 }
 #sandraContent,#liberatoContent{
     width: 26rem;
     height: 16rem;
     border: 1px solid black;
+    overflow: auto;
 }
 .liberato:hover,.sandra:hover{
     transform: scale(1.15);
