@@ -71,7 +71,8 @@ nav{
     height: calc(100% - 1rem);
 }
 .link-personagens{
-    animation: show 1.5s ease;
+    
+    /* animation: show 1.5s ease; */
     background-color: var(--fundo2);
     margin: 1rem 19rem;
     height: 3rem;
