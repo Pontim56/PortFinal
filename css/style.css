@@ -126,7 +126,7 @@ main{
 #p2{
     margin: 10px 0;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
 }
 #p3{
@@ -180,7 +180,7 @@ main{
 }
 .sobretxt{
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
     border-radius: 0 0 200px 00px;
@@ -207,7 +207,7 @@ main{
     text-align: justify;
 }
 .obrastxt{
-    width: 90%;
+    width: 100%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -283,7 +283,7 @@ main{
     
 }
 .livro-resumo-txt{
-    width: 90%;
+    width: 100%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -342,7 +342,7 @@ main{
 }
 .txtPersonagem p{
     width: 100%;
-    height: 25%;
+    /* height: 25%; */
     margin: 2rem;
     margin-right: 4rem;
 
@@ -521,22 +521,25 @@ main{
 
 @media (max-width:600px){ 
     .container{
-        height: 700vh;
+        height: 850vh;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: center;
     }
     .autor{
+        margin-bottom: 3rem;
         flex-wrap: wrap;
-        height: calc(200vh + 16rem);
+        height: calc(200vh + 3rem);
         align-items: flex-start;
         justify-content: center;
+        align-content: space-evenly;
     }
     .aluisio{
         padding: 0;
         margin: 0;
         width: 80%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -544,20 +547,22 @@ main{
     }
     .aluisio img{
         width: 55%;
-        height: 60%;
+        height: 50% !important;
         margin-top: 2rem;
         border-radius:20px 20px 500px 500px;
         flex-wrap: wrap;
     }
     .descricao{
+        height: calc(50% - 5rem);
         width: 80%;
-        align-content: flex-start;
+        align-content: center;
         justify-content: center;
+        align-content: space-evenly;
     }
     .content{
         padding: 0;
         margin: 0;
-        height: 100vh;
+        height: 90vh;
         width: 80%;
         display: flex;
         flex-wrap: wrap;
@@ -573,10 +578,63 @@ main{
     }
 
     .livro{
+        flex-wrap: wrap;
+        height: calc(200vh + 16rem);
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .livro-content{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
         width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border-radius: 20px 20px 500px 500px;/*topo direita baixo esquerda */
+    }
+    .livro-cortico{
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px 20px 500px 500px;
+    }
+    .livro-cortico img{
+        width: 60%;
+        height: 50%;
+        margin-top: 2rem;
+        border-radius:20px 20px 500px 500px;
+        flex-wrap: wrap;
+    }
+    .aluisio img{
+        width: 55%;
+        height: calc(50% - 5rem);
+        margin-top: 2rem;
+        border-radius:20px 20px 500px 500px;
+        flex-wrap: wrap;
+    }
+    .switch-personagem-centro{
+        justify-content: flex-start;
+    }
+    .pers{
+        height: 100vh;
+        width: 90%;
+    }
+    .pers-content{
+        height: 100%;
+        margin: 0;
+    }
+    .txtPersonagem p{
+        margin: 2rem;
+    }
+    .pers p:nth-child(1){
+        margin-top: 5rem;
+    }
+    .txtPersonagem{
+        flex-wrap: wrap;
+
     }
 }
