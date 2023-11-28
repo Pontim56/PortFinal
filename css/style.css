@@ -629,6 +629,7 @@ main{
     }
     .txtPersonagem p{
         margin: 2rem;
+        margin-right: calc(2rem + 19px);
     }
     .pers p:nth-child(1){
         margin-top: 5rem;
