@@ -126,7 +126,7 @@ main{
 #p2{
     margin: 10px 0;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 #p3{
@@ -524,7 +524,7 @@ main{
         height: 850vh;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-content: flex-start;
         justify-content: center;
     }
     .autor{
@@ -636,5 +636,17 @@ main{
     .txtPersonagem{
         flex-wrap: wrap;
 
+    }
+    #p2{
+        font-size: 1rem;
+    }
+    #p3{
+        font-size: 1.1rem;
+    }
+    .divisao{
+        width: 100%;
+    }
+    .divis{
+        width: 80%;
     }
 }
