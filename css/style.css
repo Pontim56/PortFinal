@@ -519,7 +519,9 @@ main{
     }
     .nav{
         flex-wrap: nowrap;
-        
+        display: flex;
+        justify-content: center;
+
     }
     .logo{
         margin: 1rem;
