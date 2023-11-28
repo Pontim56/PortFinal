@@ -73,11 +73,15 @@ header h1:hover{
 
 .container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     /* height: 2000px; */
     
 }
 .content{
-    margin: 4rem;
+    margin: 3rem 0;
+    width: 95.5%;
 
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq);
@@ -298,9 +302,57 @@ p,h1{
     justify-content: center;
     align-items: center;
   }
-  
 
 
+.divisao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divis{
+    width: 95.5%;
+    height: 0.2rem;
+    background-color: var(--destaq);
+}
 
-
-  
+  @media (max-width:600px){ 
+    .divisao{
+        width: 100%;
+    }
+    .divis{
+        width: 90%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 90%;
+        margin: 3rem 0;
+    }
+    .utf{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .esquerda{
+        width: 100%;
+    }
+    .fachada{
+        margin: 3rem 0;
+    }
+    .utf img{
+        width: 90%;
+    }
+    .profs{
+        width: 90%;
+        margin: 3rem 0 ;
+    }
+    .utfField{
+        width: 90%;
+        margin: 3rem 0;
+    }
+    .logoPNG{
+        width: 70% !important;
+    }
+  }
