@@ -143,7 +143,7 @@ main{
 }
 .switches{
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 10%;
     border-bottom:0;
 }
@@ -156,12 +156,8 @@ main{
     background-color: var(--fundo3);
     border-radius: 0 10px 0 0;
 }
-#voltar{
-    height: 100%;
-    border-radius: 10px 10px 0 0;
-    background-color: var(--destaq);
-}
-#sobre,#obras,#voltar,#resumo,.pers a h1{
+
+#sobre,#obras,#resumo,.pers a h1{
     height: 100%;
     width: 7rem;
     border: 0.2rem solid var(--destaq); 
@@ -172,14 +168,9 @@ main{
     align-items: center;
     cursor: pointer;
 }
-.back{
-    width: calc(90% - 9rem);
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
-}
+
 .sobretxt{
-    width: 90%;
+    width: 100%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -283,7 +274,7 @@ main{
     
 }
 .livro-resumo-txt{
-    width: 90%;
+    width: 100%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -526,6 +517,14 @@ main{
         align-content: flex-start;
         justify-content: center;
     }
+    .nav{
+        flex-wrap: nowrap;
+        
+    }
+    .logo{
+        margin: 1rem;
+    }
+
     .autor{
         margin-bottom: 3rem;
         flex-wrap: wrap;
@@ -571,10 +570,7 @@ main{
         display: flex;
         justify-content: flex-start;
     }
-    .back{
-        margin: 0;
-        width: calc(100% - 14rem);
-    }
+
 
     .livro{
         flex-wrap: wrap;
