@@ -524,7 +524,7 @@ main{
 
     }
     .logo{
-        margin: 1rem;
+        margin-left: 2rem;
     }
 
     .autor{
@@ -547,13 +547,13 @@ main{
     }
     .aluisio img{
         width: 55%;
-        height: 50% !important;
+        height: 40% !important;
         margin-top: 2rem;
         border-radius:20px 20px 500px 500px;
         flex-wrap: wrap;
     }
     .descricao{
-        height: calc(50% - 5rem);
+        height: calc(60% - 5rem);
         width: 80%;
         align-content: center;
         justify-content: center;
@@ -601,14 +601,14 @@ main{
     }
     .livro-cortico img{
         width: 60%;
-        height: 50%;
+        height: 40%;
         margin-top: 2rem;
         border-radius:20px 20px 500px 500px;
         flex-wrap: wrap;
     }
     .aluisio img{
         width: 55%;
-        height: calc(50% - 5rem);
+        height: calc(60% - 5rem);
         margin-top: 2rem;
         border-radius:20px 20px 500px 500px;
         flex-wrap: wrap;
