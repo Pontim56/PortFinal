@@ -7,10 +7,6 @@
     --fundo:rgb(207, 229, 236);
     --fundo2:rgb(173,216,230);
     --fundo3:rgb(134, 197, 218);
-    /* --fundo:rgb(255, 214, 157);
-    --fundo2:rgb(255, 193, 108);
-    --fundo3:rgb(255, 148, 48);
-    --destaq:rgb(248, 56, 57); */
 }
 ::selection{
     background: var(--destaq);
@@ -24,7 +20,7 @@
     
 }
   ::-webkit-scrollbar {
-    width: 18px;
+    width: 19px;
   }
 
   ::-webkit-scrollbar-track {
@@ -34,7 +30,7 @@
   ::-webkit-scrollbar-thumb {
     background-color: var(--destaq);
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid #000;
   }
 p,h1{
     color: var(--txt);
@@ -54,7 +50,7 @@ main{
     animation: show 1.5s ease-in;
 }
 .container{
-    width:calc(100vw - 18px);
+    width:calc(100vw - 19px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
