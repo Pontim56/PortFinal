@@ -1,135 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon"
-    href="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png"
+        href="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png"
         type="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body>
     <div class="container">
         <nav id="nav">
-            <img class="logo" src="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png" alt="">
-            
+            <img class="logo"
+                src="https://www.utfpr.edu.br/icones/cabecalho/logo-utfpr/@@images/efcf9caf-6d29-4c24-8266-0b7366ea3a40.png"
+                alt="">
+
             <input type="checkbox" id="checkbox" onchange="menu()">
-                <label for="checkbox" class="toggle">
-                    <div class="bars" id="bar1"></div>
-                    <div class="bars" id="bar2"></div>
-                    <div class="bars" id="bar3"></div>
-                </label>
-                
-                <div class="checkbox-wrapper-41"> 
-                    <input onchange="checkBoxChange()" type="checkbox" id="meuCheckBox" class="checkbox">
-                </div>
-            </nav>
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
 
-            <div class="divisao "><div class="divis"></div></div>
+            <div class="checkbox-wrapper-41">
+                <input onchange="checkBoxChange()" type="checkbox" id="meuCheckBox" class="checkbox">
+            </div>
+        </nav>
 
-            <ul class="link-personagens animate__animated animate__lightSpeedInLeft animate__fast" id="link-personagens">
-                <li><a href="#livro" onclick="closeMenu()">Resumo</a></li>
-                <li><a href="#personagem1" onclick="closeMenu()">Pers 1</a></li>
-                <li><a href="#personagem2" onclick="closeMenu()">Pers 2</a></li>
-                <li><a href="#personagem3" onclick="closeMenu()">Pers 3</a></li>
-            </ul>
-            
-            <main>
-                <div class="autor">
-                <div class="aluisio">
-                    <img src="images/aluiso.jpeg" alt="">
-                    <div class="descricao">
-                        <p id="p2">"Todo o homem. por pior que seja, tem no coração uma grande dose de altruísmo e belas aspirações..."</p>
-                        <p id="p3">AZEVEDO, A., O Coruja, 1889</p>
+        <div class="divisao ">
+            <div class="divis"></div>
+        </div>
+
+        <ul class="link-personagens animate__animated animate__lightSpeedInLeft animate__fast" id="link-personagens">
+            <li><a href="#livro" onclick="closeMenu()">Resumo</a></li>
+            <li><a href="#personagem1" onclick="closeMenu()">Pers 1</a></li>
+            <li><a href="#personagem2" onclick="closeMenu()">Pers 2</a></li>
+            <li><a href="#personagem3" onclick="closeMenu()">Pers 3</a></li>
+        </ul>
+
+        <div class="autor">
+            <div class="aluisio">
+                <img src="images/aluiso.jpeg" alt="">
+                <div class="descricao">
+                    <p id="p2">"Todo o homem. por pior que seja, tem no coração uma grande dose de altruísmo e belas
+                        aspirações..."</p>
+                    <p id="p3">AZEVEDO, A., O Coruja, 1889</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="switches">
+                    <h1 id="sobre" onclick="sobreF()">Sobre</h1>
+                    <h1 id="obras" onclick="obrasF()">Obras</h1>
+                    <div class="back">
+                        <a href="index.html"><h1 id="voltar">voltar</h1></a>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="switches">
-                        <h1 id="sobre" onclick="sobreF()">Sobre</h1>
-                        <h1 id="obras" onclick="obrasF()">Obras</h1>
-                        <div class="back"><a href="index.html"><h1 id="voltar">voltar</h1></a></div>
+                <div id="sobretxt" class="sobretxt">
+                    <p>Aluísio Tancredo Gonçalves de Azevedo nasceu no dia 14 de abril de 1857, em São Luís, Maranhão.
+                        Começou sua carreira de escritor em 1879, com do romance Uma lágrima de mulher, mas foi em 1881
+                        com o romance O mulato que ele se consagrou como o primeiro escritor brasileiro que conseguiu
+                        viver da literatura. Além de romances, escreveu contos, crônicas e peças de teatro, sendo O
+                        cortiço sua obra mais consagrada, instaurando um marco na literatura brasileira. Faleceu em 21
+                        de janeiro de 1913, em La Plata, na Argentina.</p>
+                    <p>Estudioso de teorias científicas em destaque na segunda metade do século XIX, o escritor, que
+                        também foi eleito membro da Academia Brasileira de Letras, construiu seus romances aplicando
+                        conceitos positivistas e deterministas. Hoje é considerado o mais importante representante do
+                        naturalismo brasileiro</p>
+                </div>
+                <div id="obrastxt" style="display: none;" class="obrastxt">
+                    <div class="livro1">
+                        <img class="pensao" src="images/pensao.jpg" alt="">
+                        <a target="_blank"
+                            href="https://www.amazon.com.br/Casa-pensão-Aluísio-Azevedo/dp/6555520639/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+                            <p>Casa de Pensão</p>
+                        </a>
                     </div>
-                    <div id="sobretxt" class="sobretxt">
-                        <p>Aluísio Tancredo Gonçalves de Azevedo nasceu no dia 14 de abril de 1857, em São Luís, Maranhão. Começou sua carreira de escritor em 1879, com do romance Uma lágrima de mulher, mas foi em 1881 com o romance O mulato que ele se consagrou como o primeiro escritor brasileiro que conseguiu viver da literatura. Além de romances, escreveu contos, crônicas e peças de teatro, sendo O cortiço sua obra mais consagrada, instaurando um marco na literatura brasileira. Faleceu em 21 de janeiro de 1913, em La Plata, na Argentina.</p>
-                        <p>Estudioso de teorias científicas em destaque na segunda metade do século XIX, o escritor, que também foi eleito membro da Academia Brasileira de Letras, construiu seus romances aplicando conceitos positivistas e deterministas. Hoje é considerado o mais importante representante do naturalismo brasileiro</p>
+                    <div class="livro2">
+                        <a href="#livro"><img class="cortico-capa" src="images/cortico.jpg" alt=""></a>
+                        <a target="_blank"
+                            href="https://www.amazon.com.br/Cortiço-Magic-Grupo/dp/6585765354/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+                            <p>O Cortiço</p>
+                        </a>
                     </div>
-                    <div id="obrastxt" style="display: none;" class="obrastxt">
-                        <div class="livro1">
-                            <img class="pensao" src="images/pensao.jpg" alt="">
-                            <a target="_blank" href="https://www.amazon.com.br/Casa-pensão-Aluísio-Azevedo/dp/6555520639/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="><p>Casa de Pensão</p></a>
-                        </div>
-                        <div class="livro2">
-                            <a href="#livro"><img class="cortico-capa" src="images/cortico.jpg" alt=""></a>
-                            <a target="_blank" href="https://www.amazon.com.br/Cortiço-Magic-Grupo/dp/6585765354/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="><p>O Cortiço</p></a>
-                        </div>
-                        <div class="livro3">
-                            <img class="mulato" src="images/mulato.jpg" alt="">
-                            <a target="_blank" href="https://www.amazon.com.br/Maluto-Azevedo/dp/858186337X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="><p>O mulato</p></a>
-                        </div>
+                    <div class="livro3">
+                        <img class="mulato" src="images/mulato.jpg" alt="">
+                        <a target="_blank"
+                            href="https://www.amazon.com.br/Maluto-Azevedo/dp/858186337X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+                            <p>O mulato</p>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
 
 
-            <div id="livro" class="livro">
-                <div class="livro-content">
-                    <div class="switches-livro">
-                        <a href="#nav"><h1 id="resumo">Resumo</h1></a>
-                    </div>
-                    <div class="livro-resumo-txt">
-                        <p> O romance mostra as mazelas e a vida miserável dos moradores de duas habitações coletivas. João Romão é ganancioso comerciante de origem portuguesa, dono de um terreno no Rio de Janeiro onde constrói moradias de baixo custo para obter renda. Bertoleza, uma negra escrava, vive com ele e o ajuda no armazém que ele mantém no lugar.</p>
-                        <p> O cortiço é erguido aos poucos, para revolta do negociante Miranda, vizinho de João Romão. Os dois travam uma briga por causa da construção do cortiço. Assim, é mostrado as lutas entre os moradores, os embates com a polícia, a ganância de João em tornar-se rico às custas dos miseráveis a seu redor, mostrando dessa forma o cotidiano das classes baixas às vésperas da Abolição e da Proclamação da República.</p>
-                    </div>
+        <div id="livro" class="livro">
+            <div class="livro-content">
+                <div class="switches-livro">
+                    <a href="#nav">
+                        <h1 id="resumo">Resumo</h1>
+                    </a>
                 </div>
-                <div class="livro-cortico">
-                    <img src="images/cortico.jpg" alt="">
-                    <div class="descricao">
-                        <p id="p2">"Confio nos meus dentes, e esses mesmo me mordem a língua!"</p>
-                        <p id="p3">AZEVEDO, A., O Cortiço, 1890</p>
-                    </div>
+                <div class="livro-resumo-txt">
+                    <p> O romance mostra as mazelas e a vida miserável dos moradores de duas habitações coletivas. João
+                        Romão é ganancioso comerciante de origem portuguesa, dono de um terreno no Rio de Janeiro onde
+                        constrói moradias de baixo custo para obter renda. Bertoleza, uma negra escrava, vive com ele e
+                        o ajuda no armazém que ele mantém no lugar.</p>
+                    <p> O cortiço é erguido aos poucos, para revolta do negociante Miranda, vizinho de João Romão. Os
+                        dois travam uma briga por causa da construção do cortiço. Assim, é mostrado as lutas entre os
+                        moradores, os embates com a polícia, a ganância de João em tornar-se rico às custas dos
+                        miseráveis a seu redor, mostrando dessa forma o cotidiano das classes baixas às vésperas da
+                        Abolição e da Proclamação da República.</p>
                 </div>
             </div>
+            <div class="livro-cortico">
+                <img src="images/cortico.jpg" alt="">
+                <div class="descricao">
+                    <p id="p2">"Confio nos meus dentes, e esses mesmo me mordem a língua!"</p>
+                    <p id="p3">AZEVEDO, A., O Cortiço, 1890</p>
+                </div>
+            </div>
+        </div>
 
-            <div class="divisao"><div class="divis"></div></div>
+        <div class="divisao">
+            <div class="divis"></div>
+        </div>
 
-            <div id="personagem1" class="pers">
-                <div class="pers-content">
-                    <div class="switch-personagem-centro">
-                        <a href="#nav"><h1 id="h1-personagem1" class="h1-personagem">Pers 1</h1></a>
-                    </div>
-                    <div class="txt1 txtPersonagem">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
-                    </div>
+        <div id="personagem1" class="pers">
+            <div class="pers-content">
+                <div class="switch-personagem-centro">
+                    <a href="#nav">
+                        <h1 id="h1-personagem1" class="h1-personagem">Pers 1</h1>
+                    </a>
+                </div>
+                <div class="txt1 txtPersonagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam
+                        soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure
+                        optio nostrum eaque error culpa sint?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi
+                        sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a
+                        soluta reiciendis adipisci nemo!</p>
                 </div>
             </div>
-            <div id="personagem2" class="pers">
-                <div class="pers-content">
-                    <div class="switch-personagem-centro">
-                        <a href="#nav"><h1 id="h1-personagem2" class="h1-personagem">Pers 2</h1></a>
-                    </div>
-                    <div class="txt2 txtPersonagem">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
-                    </div>
+        </div>
+        <div id="personagem2" class="pers">
+            <div class="pers-content">
+                <div class="switch-personagem-centro">
+                    <a href="#nav">
+                        <h1 id="h1-personagem2" class="h1-personagem">Pers 2</h1>
+                    </a>
+                </div>
+                <div class="txt2 txtPersonagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam
+                        soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure
+                        optio nostrum eaque error culpa sint?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi
+                        sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a
+                        soluta reiciendis adipisci nemo!</p>
                 </div>
             </div>
-            <div id="personagem3" class="pers">
-                <div class="pers-content">
-                    <div class="switch-personagem-centro">
-                        <a href="#nav"><h1 id="h1-personagem3" class="h1-personagem">Pers 3</h1></a>
-                    </div>
-                    <div class="txt3 txtPersonagem">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure optio nostrum eaque error culpa sint?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a soluta reiciendis adipisci nemo!</p>
-                    </div>
+        </div>
+        <div id="personagem3" class="pers">
+            <div class="pers-content">
+                <div class="switch-personagem-centro">
+                    <a href="#nav">
+                        <h1 id="h1-personagem3" class="h1-personagem">Pers 3</h1>
+                    </a>
+                </div>
+                <div class="txt3 txtPersonagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam
+                        soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure
+                        optio nostrum eaque error culpa sint?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi
+                        sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a
+                        soluta reiciendis adipisci nemo!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum facilis reprehenderit nam
+                        soluta reiciendis, architecto itaque facere voluptatibus sint, tenetur accusantium est? Iure
+                        optio nostrum eaque error culpa sint?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam porro obcaecati quasi
+                        sunt dolores voluptatem repudiandae! Explicabo hic ducimus sunt, alias, porro nulla quos a
+                        soluta reiciendis adipisci nemo!</p>
                 </div>
             </div>
+        </div>
 </body>
-<script src="script/jsAnmt.js"></script>    
+<script src="script/jsAnmt.js"></script>
 <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+
 </html>
