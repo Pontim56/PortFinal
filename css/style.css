@@ -276,7 +276,8 @@ main{
     
 }
 .livro-resumo-txt{
-    width: calc(100% - 19px);
+    width: 100%;
+    margin-left: 19px;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
