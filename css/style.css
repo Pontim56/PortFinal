@@ -341,7 +341,7 @@ main{
 .txtPersonagem p{
     width: 100%;
     direction: ltr;
-    margin: 0 6rem 0 0;
+    margin: 0 6rem 0 2rem;
 }
 .txtPersonagem :nth-child(1){
     margin-top: 2rem;
