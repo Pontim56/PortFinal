@@ -566,8 +566,9 @@ main{
     .content{
         padding: 0;
         margin: 0;
+        margin-left: 2rem;
         height: 90vh;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -581,7 +582,6 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
         text-align: center;
     }
     .livro1{
@@ -604,7 +604,8 @@ main{
         padding: 0;
         margin: 0;
         height: 50%;
-        width: 80%;
+        width: 100%;
+        margin-right: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -612,7 +613,7 @@ main{
     .livro-cortico{
         padding: 0;
         margin: 0;
-        width: 80%;
+        width: 90%;
         height: 100vh;
         display: flex;
         flex-wrap: wrap;
@@ -638,8 +639,8 @@ main{
     }
     .pers{
         height: 100vh;
-        width: 90%;
-        margin: 2rem;
+        width: 100%;
+        margin: 2rem 0;
     }
     .pers-content{
         height: 100%;
