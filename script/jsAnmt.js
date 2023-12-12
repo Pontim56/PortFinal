@@ -1,17 +1,17 @@
-function sandra(){
-    var rafa=document.getElementById("liberato");
-    var estilo = window.getComputedStyle(liberato);
-    var sandraCTT = document.getElementById("sandraContent");
-    if (estilo.display==="flex") {
-      rafa.style.display="none";
-      sandraCTT.style.display="block";
-      document.getElementById('sandraContent').scrollIntoView({});
+// function sandra(){
+//     var rafa=document.getElementById("liberato");
+//     var estilo = window.getComputedStyle(liberato);
+//     var sandraCTT = document.getElementById("sandraContent");
+//     if (estilo.display==="flex") {
+//       rafa.style.display="none";
+//       sandraCTT.style.display="block";
+//       document.getElementById('sandraContent').scrollIntoView({});
   
-  }else{
-    rafa.style.display="flex";
-    sandraCTT.style.display="none"
-  }
-  }
+//   }else{
+//     rafa.style.display="flex";
+//     sandraCTT.style.display="none"
+//   }
+//   }
 
 
 var sobre =document.getElementById("sobre");
