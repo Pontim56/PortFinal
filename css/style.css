@@ -577,6 +577,22 @@ main{
         justify-content: flex-start;
     }
 
+    .obrastxt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .livro1{
+        margin: 0;
+    }
+    .livro2{
+        margin: 0;
+    }
+    .livro3{
+        margin: 0;
+    }
 
     .livro{
         flex-wrap: wrap;
