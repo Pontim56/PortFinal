@@ -291,7 +291,7 @@ main{
     margin-top: 2rem;
 }
 .livro-resumo-txt :nth-child(6){
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .livro-resumo-txt p {
     text-align: justify;
@@ -335,12 +335,16 @@ main{
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
+    text-align: justify;
     gap: 1rem;
 }
 .txtPersonagem p{
     width: 100%;
     direction: ltr;
-    margin: 0 3rem;
+    margin: 0 6rem 0 0;
+}
+.txtPersonagem :nth-child(1){
+    margin-top: 2rem;
 }
 .txt1{
     border-radius: 0 0 200px 0;
