@@ -135,11 +135,12 @@ main{
 
 .content{
     margin-top: 3rem;
+    margin-left: 3rem;
     width: 70%;
     height: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .switches{
     display: flex;
@@ -167,10 +168,11 @@ main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
 }
 
 .sobretxt{
-    width: 100%;
+    width: 90%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -240,7 +242,7 @@ main{
     width: 80%;
 }
 .livro{
-    padding-top: 2rem;
+    margin: 2rem 0rem;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -274,7 +276,7 @@ main{
     
 }
 .livro-resumo-txt{
-    width: 100%;
+    width: 90%;
     height: 90%;
     background-color: var(--fundo2);
     border: 0.2rem solid var(--destaq); 
@@ -283,14 +285,17 @@ main{
     flex-wrap: wrap;
     align-content: flex-start;
     overflow-y: auto;
+    gap: 1rem;
 }
-.livro-resumo-txt p:nth-child(1){/*topo direita baixo esquerda */
-    margin: 3rem 2rem 1rem 4rem;
-    text-align: justify;
+.livro-resumo-txt :nth-child(1){
+    margin-top: 2rem;
 }
-.livro-resumo-txt p:nth-child(2){
-    margin: 1rem 2rem 3rem 4rem;
+.livro-resumo-txt :nth-child(6){
+    margin-bottom: 2rem;
+}
+.livro-resumo-txt p {
     text-align: justify;
+    margin: 0 3rem;
 }
 .switches-livro{
     display: flex;
@@ -330,17 +335,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
+    gap: 1rem;
 }
 .txtPersonagem p{
     width: 100%;
-    /* height: 25%; */
-    margin: 2rem;
-    margin-right: 4rem;
-
-    display: flex;
-    align-items: center;
-    text-align: justify;
     direction: ltr;
+    margin: 0 3rem;
 }
 .txt1{
     border-radius: 0 0 200px 0;
